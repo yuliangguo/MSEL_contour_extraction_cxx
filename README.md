@@ -42,8 +42,8 @@ Reference:
 ```
 ### 4. Use of MSEL contour extraction
 
-# Extraction contours from image 
-	e.g.	./MESL_bin/MSEL_compute_contours_from_img 10081.jpg 10081.cem 200 1.5 1
+	# Extraction contours from image 
+		e.g.	./MESL_bin/MSEL_compute_contours_from_img 10081.jpg 10081.cem 200 1.5 1
 	# This is a combination of edge-detection and contour extraction
 	# the edge detection integrated referst to: "No grouping left behind: From edges to curve fragments, Tamrakar and Kimia, ICCV 2007"
 	# Usage: ./MESL_bin/MSEL_compute_contours_from_img input_img_file output_cem_file nContours edge_sigma edge_thresh
@@ -53,8 +53,8 @@ Reference:
 	#	edge_sigma:  sigma parameter for the edge detection, deciding the scale of edge.
 	#	edge_thresh: gradient thresh for the edge detection, deciding the scale of edge.
 
-# Extraction contours from edges 
-	e.g.	./MESL_bin/MSEL_compute_contours_from_edges 10081.jpg 10081.edg 10081.cem 200
+	# Extraction contours from edges 
+		e.g.	./MESL_bin/MSEL_compute_contours_from_edges 10081.jpg 10081.edg 10081.cem 200
 	# Suppose edges can be detected from third-part softwares, and can be saved in the same format as "10081.edg"
 	# Usage: ./MESL_bin/MSEL_compute_contours_from_img input_img_file input_edg_file output_cem_file nContours
 	# 	input_img_file:	path of the input image file. Input image must be color.
@@ -62,7 +62,7 @@ Reference:
 	#	output_cem_file: path of the output contour file, we define this type of file as ".cem".
 	#	nContours: number of contours to be outputed after ranking. If this is set to 0 or kept blank, it will output all the generated contours.
 
-# Visualize contours using Matlab
+### 5. Visualize contours using Matlab
 
  	use Matlab, demo_vis_io.m
 
